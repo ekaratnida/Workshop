@@ -1,3 +1,4 @@
+#pip install fastavro
 from fastavro import writer, reader, parse_schema
 
 schema = {
