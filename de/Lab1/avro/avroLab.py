@@ -21,11 +21,12 @@ records = [
     {u'station': u'011990-99999', u'temp': 22, u'time': 1433270389},
     {u'station': u'011990-99999', u'temp': -11, u'time': 1433273379},
     {u'station': u'012650-99999', u'temp': 111, u'time': 1433275478},
+    {u'station': u'012650-11', u'temp': 211, u'time': 1433275479, u'officer': u'Peter'},
 ]
 
 # Writing
-with open('weather.avro', 'wb') as out:
-    writer(out, parsed_schema, records)
+# with open('weather.avro', 'wb') as out:
+#    writer(out, parsed_schema, records)
 
 # Reading
 with open('weather.avro', 'rb') as fo:
