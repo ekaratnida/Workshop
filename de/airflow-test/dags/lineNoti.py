@@ -15,7 +15,7 @@ default_args = {
 }
 
 @dag('line-notify',
-        schedule_interval='0 6/4 * * *',
+        schedule_interval='0 0-23/1 * * *',
         default_args=default_args,
         description='A simple data pipeline for line-notify',
         catchup=False)
