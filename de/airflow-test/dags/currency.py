@@ -15,7 +15,7 @@ def on_failure_callback(**context):
 
 def uploadtomongo(ti, **context):
     try:
-        hook = MongoHook(mongo_conn_id='mongo_default')
+        hook = MongoHook(mongo_conn_id='mongoid')
         client = hook.get_conn()
         db = client.MyDB
         currency_collection=db.currency_collection
